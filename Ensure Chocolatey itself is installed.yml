@@ -1,0 +1,6 @@
+---
+- hosts: all
+- name: Ensure Chocolatey itself is installed, using a specific bootstrap script
+  win_chocolatey:
+    name: chocolatey
+    bootstrap_script: https://internal-web-server/files/custom-chocolatey-install.ps1
